@@ -9,21 +9,41 @@
 /* Begin PBXBuildFile section */
 		10B5031B281BE156005B1A1F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10B5031A281BE156005B1A1F /* AppDelegate.swift */; };
 		10B5031D281BE156005B1A1F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10B5031C281BE156005B1A1F /* SceneDelegate.swift */; };
-		10B5031F281BE156005B1A1F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10B5031E281BE156005B1A1F /* ViewController.swift */; };
+		10B5031F281BE156005B1A1F /* GameLaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10B5031E281BE156005B1A1F /* GameLaunchViewController.swift */; };
 		10B50322281BE156005B1A1F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10B50320281BE156005B1A1F /* Main.storyboard */; };
 		10B50324281BE156005B1A1F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 10B50323281BE156005B1A1F /* Assets.xcassets */; };
 		10B50327281BE156005B1A1F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10B50325281BE156005B1A1F /* LaunchScreen.storyboard */; };
+		10B50334281BE2AC005B1A1F /* GuessNumberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10B50333281BE2AC005B1A1F /* GuessNumberViewController.swift */; };
+		10B50336281BE2B9005B1A1F /* ComputerGuessingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10B50335281BE2B9005B1A1F /* ComputerGuessingViewController.swift */; };
+		10B50338281BE2C8005B1A1F /* PlayerGuessingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10B50337281BE2C8005B1A1F /* PlayerGuessingViewController.swift */; };
+		10B5033A281BE2E0005B1A1F /* GameResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10B50339281BE2E0005B1A1F /* GameResultViewController.swift */; };
+		10B5033C281BE374005B1A1F /* BorderButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10B5033B281BE374005B1A1F /* BorderButton.swift */; };
+		10B5033E281BE387005B1A1F /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10B5033D281BE387005B1A1F /* Game.swift */; };
+		10B50340281BE38C005B1A1F /* Computer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10B5033F281BE38C005B1A1F /* Computer.swift */; };
+		10B50342281BE3C2005B1A1F /* UITextField+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10B50341281BE3C2005B1A1F /* UITextField+Extensions.swift */; };
+		10B50344281BE3D1005B1A1F /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10B50343281BE3D1005B1A1F /* UIViewController+Extensions.swift */; };
+		10B50346281BE4FA005B1A1F /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 10B50345281BE4FA005B1A1F /* .gitignore */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		10B50317281BE156005B1A1F /* GuessNumber.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GuessNumber.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		10B5031A281BE156005B1A1F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		10B5031C281BE156005B1A1F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		10B5031E281BE156005B1A1F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		10B5031E281BE156005B1A1F /* GameLaunchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameLaunchViewController.swift; sourceTree = "<group>"; };
 		10B50321281BE156005B1A1F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		10B50323281BE156005B1A1F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		10B50326281BE156005B1A1F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		10B50328281BE156005B1A1F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		10B50333281BE2AC005B1A1F /* GuessNumberViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuessNumberViewController.swift; sourceTree = "<group>"; };
+		10B50335281BE2B9005B1A1F /* ComputerGuessingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComputerGuessingViewController.swift; sourceTree = "<group>"; };
+		10B50337281BE2C8005B1A1F /* PlayerGuessingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerGuessingViewController.swift; sourceTree = "<group>"; };
+		10B50339281BE2E0005B1A1F /* GameResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameResultViewController.swift; sourceTree = "<group>"; };
+		10B5033B281BE374005B1A1F /* BorderButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BorderButton.swift; sourceTree = "<group>"; };
+		10B5033D281BE387005B1A1F /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+		10B5033F281BE38C005B1A1F /* Computer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Computer.swift; sourceTree = "<group>"; };
+		10B50341281BE3C2005B1A1F /* UITextField+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Extensions.swift"; sourceTree = "<group>"; };
+		10B50343281BE3D1005B1A1F /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
+		10B50345281BE4FA005B1A1F /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +60,7 @@
 		10B5030E281BE156005B1A1F = {
 			isa = PBXGroup;
 			children = (
+				10B50345281BE4FA005B1A1F /* .gitignore */,
 				10B50319281BE156005B1A1F /* GuessNumber */,
 				10B50318281BE156005B1A1F /* Products */,
 			);
@@ -56,15 +77,64 @@
 		10B50319281BE156005B1A1F /* GuessNumber */ = {
 			isa = PBXGroup;
 			children = (
-				10B5031A281BE156005B1A1F /* AppDelegate.swift */,
-				10B5031C281BE156005B1A1F /* SceneDelegate.swift */,
-				10B5031E281BE156005B1A1F /* ViewController.swift */,
-				10B50320281BE156005B1A1F /* Main.storyboard */,
-				10B50323281BE156005B1A1F /* Assets.xcassets */,
-				10B50325281BE156005B1A1F /* LaunchScreen.storyboard */,
+				10B50331281BE1A3005B1A1F /* Models */,
+				10B50330281BE195005B1A1F /* View */,
+				10B5032F281BE18C005B1A1F /* Controllers */,
+				10B50332281BE1AB005B1A1F /* Extensions */,
+				10B5032E281BE181005B1A1F /* Files */,
 				10B50328281BE156005B1A1F /* Info.plist */,
 			);
 			path = GuessNumber;
+			sourceTree = "<group>";
+		};
+		10B5032E281BE181005B1A1F /* Files */ = {
+			isa = PBXGroup;
+			children = (
+				10B5031A281BE156005B1A1F /* AppDelegate.swift */,
+				10B5031C281BE156005B1A1F /* SceneDelegate.swift */,
+				10B50323281BE156005B1A1F /* Assets.xcassets */,
+				10B50325281BE156005B1A1F /* LaunchScreen.storyboard */,
+			);
+			path = Files;
+			sourceTree = "<group>";
+		};
+		10B5032F281BE18C005B1A1F /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				10B5031E281BE156005B1A1F /* GameLaunchViewController.swift */,
+				10B50333281BE2AC005B1A1F /* GuessNumberViewController.swift */,
+				10B50335281BE2B9005B1A1F /* ComputerGuessingViewController.swift */,
+				10B50337281BE2C8005B1A1F /* PlayerGuessingViewController.swift */,
+				10B50339281BE2E0005B1A1F /* GameResultViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		10B50330281BE195005B1A1F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				10B50320281BE156005B1A1F /* Main.storyboard */,
+				10B5033B281BE374005B1A1F /* BorderButton.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		10B50331281BE1A3005B1A1F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				10B5033D281BE387005B1A1F /* Game.swift */,
+				10B5033F281BE38C005B1A1F /* Computer.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		10B50332281BE1AB005B1A1F /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				10B50341281BE3C2005B1A1F /* UITextField+Extensions.swift */,
+				10B50343281BE3D1005B1A1F /* UIViewController+Extensions.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +195,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				10B50346281BE4FA005B1A1F /* .gitignore in Resources */,
 				10B50327281BE156005B1A1F /* LaunchScreen.storyboard in Resources */,
 				10B50324281BE156005B1A1F /* Assets.xcassets in Resources */,
 				10B50322281BE156005B1A1F /* Main.storyboard in Resources */,
@@ -138,9 +209,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				10B5031F281BE156005B1A1F /* ViewController.swift in Sources */,
+				10B50342281BE3C2005B1A1F /* UITextField+Extensions.swift in Sources */,
+				10B50338281BE2C8005B1A1F /* PlayerGuessingViewController.swift in Sources */,
+				10B5033E281BE387005B1A1F /* Game.swift in Sources */,
+				10B50340281BE38C005B1A1F /* Computer.swift in Sources */,
+				10B50344281BE3D1005B1A1F /* UIViewController+Extensions.swift in Sources */,
+				10B5031F281BE156005B1A1F /* GameLaunchViewController.swift in Sources */,
+				10B50334281BE2AC005B1A1F /* GuessNumberViewController.swift in Sources */,
+				10B50336281BE2B9005B1A1F /* ComputerGuessingViewController.swift in Sources */,
+				10B5033A281BE2E0005B1A1F /* GameResultViewController.swift in Sources */,
 				10B5031B281BE156005B1A1F /* AppDelegate.swift in Sources */,
 				10B5031D281BE156005B1A1F /* SceneDelegate.swift in Sources */,
+				10B5033C281BE374005B1A1F /* BorderButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
