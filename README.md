@@ -1,5 +1,14 @@
 # GuessNumber
 
+При разработке приложения использовалась архитектура MVC. Данная архитектура была применена мной по нескольким причинам:
+
++ Простота реализации 
++ Небольшое количество кода во вьюконтроллерах за счет применения storyboards и вынесения логики в модели 
++ Apple рекомендует данную архитектуру для простых приложений
+
+Обработка не корректного поведения пользователя осуществлена с помощью alertController.
+Для проверки ожидаемого поведения игры добавлены тесты для класса Game.
+
 ____
 
 ## Portrait mode
@@ -19,3 +28,18 @@ ____
 ![playerGuessingLandscape](/Images/landscapePlayerGuessing.png)
 ![gameResultLandscape](/Images/landscapeGameResult.png)
 ____
+
+## Используемые технологии
+
++ Swift 5.6 (iOS 15.4)
++ UIKit
++ Storyboard
++ MVC
++ UIAlertController
++ UITapGestureRecognizer
++ XCTest
+
+
+
+
+
