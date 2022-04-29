@@ -17,13 +17,16 @@ final class Computer {
     
     func initiallyGuessingNumber() -> Int {
         computerInitallyValue = Int.random(in: left...right)
+        
+        if computerVariant == 0 {
+            computerVariant = computerInitallyValue
+        }
+        
         return computerInitallyValue
     }
     
     func computerGuessingNumber(numberToGuess: Int) -> Int {
-        if computerVariant == 0 {
-            computerVariant = computerInitallyValue
-        }
+        
         
         if numberToGuess > computerVariant {
             if (right - 1) == left {

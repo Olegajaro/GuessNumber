@@ -30,10 +30,18 @@ class ComputerGuessingViewController: UIViewController {
     
     // MARK: - IBActions
     @IBAction func moreSignButtonTapped() {
+        if numberToGuess < game.computer.computerVariant {
+            showAlert(withTitle: "Hey", andMessage: "Don't cheat on the computer")
+            return
+        }
         updateLabels()
     }
     
     @IBAction func lessSignButtonTapped() {
+        if numberToGuess > game.computer.computerVariant {
+            showAlert(withTitle: "Hey", andMessage: "Don't cheat on the computer")
+            return
+        }
         updateLabels()
     }
     
