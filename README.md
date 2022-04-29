@@ -13,4 +13,9 @@ ____
 
 ## Landscape mode
 
+![gameLaunchLandscape](/Images/landscapeGameLaunch.png)
+![guessNumberLandscape](/Images/landscapeGuessNumber.png)
+![computerGuessingLandscape](/Images/landscapeComputerGuessing.png)
+![playerGuessingLandscape](/Images/landscapePlayerGuessing.png)
+![gameResultLandscape](/Images/landscapeGameResult.png)
 ____
