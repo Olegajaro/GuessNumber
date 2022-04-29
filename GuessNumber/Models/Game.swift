@@ -9,14 +9,14 @@ import Foundation
 
 final class Game {
     
-    private(set) var computer = Computer()
+    let computer = Computer()
     
-    private var numberToGuess: Int?
+    private(set) var numberToGuess: Int
     
     private(set) var computerTriesCount = 1
     private(set) var playerTriesCount = 1
     
-    init(numberToGuess: Int? = nil) {
+    init(numberToGuess: Int) {
         self.numberToGuess = numberToGuess
     }
     
@@ -25,8 +25,6 @@ final class Game {
     }
     
     func computerGuessingTheNumber() -> Int {
-        guard let numberToGuess = numberToGuess else { return 0 }
-
         if numberToGuess != computer.computerVariant {
             computerTriesCount += 1
         }
@@ -35,8 +33,7 @@ final class Game {
     }
     
     func computerSetsTheNumber() -> Int {
-        numberToGuess = computer.guessTheNumber()
-        return numberToGuess ?? 0
+        computer.guessTheNumber()
     }
     
     func playerTriesToGuessTheNumber(numberToGuess: Int, playerNumber: Int) -> String {

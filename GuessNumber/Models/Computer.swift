@@ -27,7 +27,6 @@ final class Computer {
     
     func computerGuessingNumber(numberToGuess: Int) -> Int {
         
-        
         if numberToGuess > computerVariant {
             if (right - 1) == left {
                 right = computerVariant + 1
@@ -52,8 +51,6 @@ final class Computer {
             let listNumber = Array(left...(computerVariant - 1))
             computerVariant = search(listNumber) ?? 0
             right = computerVariant
-        } else {
-            return computerVariant
         }
         
         return computerVariant

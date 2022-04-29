@@ -45,18 +45,18 @@ class PlayerGuessingViewController: UIViewController {
     private func updateUI() {
         guard let guessNumber = Int(playerGuessingTextField.text ?? "") else { return }
         
+        statusLabel.text = game.playerTriesToGuessTheNumber(
+            numberToGuess: numberToGuess,
+            playerNumber: guessNumber
+        )
+        triesCountLabel.text = "Try № \(playerCount)"
+        
         if !(1...100).contains(guessNumber) {
             showAlert(
                 withTitle: "Wrong",
                 andMessage: "The text field is empty or the values are not in the range 1...100"
             )
         }
-        
-        triesCountLabel.text = "Try № \(playerCount)"
-        statusLabel.text = game.playerTriesToGuessTheNumber(
-            numberToGuess: numberToGuess,
-            playerNumber: guessNumber
-        )
         
         if numberToGuess == guessNumber {
             performSegue(withIdentifier: "toResultScreen", sender: nil)
