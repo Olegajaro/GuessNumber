@@ -9,7 +9,8 @@ import Foundation
 
 final class Game {
     
-    let computer = Computer()
+    private(set) var computer = Computer()
+    
     private var numberToGuess: Int?
     
     private(set) var computerTriesCount = 1
