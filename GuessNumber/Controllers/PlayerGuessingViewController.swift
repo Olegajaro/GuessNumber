@@ -39,6 +39,7 @@ class PlayerGuessingViewController: UIViewController {
     private func setup() {
         numberToGuess = game.computerSetsTheNumber()
         playerGuessingTextField.addDoneButton()
+        setupDismissKeyboardGesture()
     }
     
     private func updateUI() {

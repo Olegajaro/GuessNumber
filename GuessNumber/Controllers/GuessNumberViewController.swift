@@ -20,6 +20,12 @@ class GuessNumberViewController: UIViewController {
         }
     }
     
+    // MARK: - View lifecycle methods
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        setupDismissKeyboardGesture()
+    }
+    
     // MARK: - IBActions
     @IBAction func guessNumberTextFieldChanged(_ sender: UITextField) {
         guard let textValue = sender.text else { return }
