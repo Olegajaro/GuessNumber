@@ -9,7 +9,15 @@ import UIKit
 
 class GuessNumberViewController: UIViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    @IBOutlet weak var guessNumberTextField: UITextField!
+    @IBOutlet weak var enterNumberButton: UIButton!
+    
+    @IBAction func guessNumberTextFieldChanged(_ sender: UITextField) {
+        
     }
+    
+    @IBAction func enterNumberTapped() {
+        
+    }
+    
 }
