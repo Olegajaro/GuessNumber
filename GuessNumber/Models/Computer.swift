@@ -28,10 +28,6 @@ final class Computer {
     func computerGuessingNumber(numberToGuess: Int) -> Int {
         
         if numberToGuess > computerVariant {
-            if (right - 1) == left {
-                right = computerVariant + 1
-            }
-            
             if right <= computerVariant {
                 right = computerInitallyValue
                 computerInitallyValue = computerVariant
