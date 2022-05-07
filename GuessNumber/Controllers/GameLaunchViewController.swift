@@ -7,5 +7,10 @@
 
 import UIKit
 
-class GameLaunchViewController: UIViewController {}
+class GameLaunchViewController: UIViewController {
+
+    @IBAction func unwindSegue(_ sender: UIStoryboardSegue) {
+        print("DEBUG: unwind")
+    }
+}
 

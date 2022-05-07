@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Dyp-IN-dTQ">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
@@ -27,11 +27,11 @@
                                     <fontDescription key="titleFontDescription" type="system" pointSize="25"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <segue destination="Iaj-A2-xrP" kind="presentation" modalPresentationStyle="fullScreen" id="jEb-Dy-bRT"/>
+                                    <segue destination="Iaj-A2-xrP" kind="show" id="jEb-Dy-bRT"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Guess Number" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QcS-8f-hV3">
-                                <rect key="frame" x="20" y="144" width="374" height="30"/>
+                                <rect key="frame" x="20" y="188" width="374" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -49,10 +49,11 @@
                             <constraint firstItem="vZe-xU-w5T" firstAttribute="leading" secondItem="QcS-8f-hV3" secondAttribute="leading" id="yP0-rr-Ljb"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="yVi-Pi-TgX"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="129" y="94"/>
+            <point key="canvasLocation" x="933" y="94"/>
         </scene>
         <!--Guess Number View Controller-->
         <scene sceneID="T4E-uG-P4I">
@@ -63,7 +64,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Guess the number" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0Pf-zC-EJt">
-                                <rect key="frame" x="20" y="194" width="374" height="34"/>
+                                <rect key="frame" x="20" y="238" width="374" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                 <connections>
@@ -79,7 +80,7 @@
                                 <buttonConfiguration key="configuration" style="filled" title="Enter the Number"/>
                                 <connections>
                                     <action selector="enterNumberTapped" destination="Iaj-A2-xrP" eventType="touchUpInside" id="R2S-ck-OcN"/>
-                                    <segue destination="OKZ-Ka-caq" kind="presentation" modalPresentationStyle="fullScreen" id="Nnm-ml-LhQ"/>
+                                    <segue destination="OKZ-Ka-caq" kind="show" id="Nnm-ml-LhQ"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -101,6 +102,7 @@
                             </constraint>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="pX7-z1-WuU"/>
                     <connections>
                         <outlet property="enterNumberButton" destination="Gsg-Og-ZOK" id="rJa-xJ-3Gw"/>
                         <outlet property="guessNumberTextField" destination="0Pf-zC-EJt" id="KYH-Fs-iYt"/>
@@ -108,7 +110,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eFF-vd-bOE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="894" y="94"/>
+            <point key="canvasLocation" x="1717" y="94"/>
         </scene>
         <!--Computer Guessing View Controller-->
         <scene sceneID="yJf-3U-PGm">
@@ -148,7 +150,7 @@
                                                 </buttonConfiguration>
                                                 <connections>
                                                     <action selector="equalsButtonTapped" destination="OKZ-Ka-caq" eventType="touchUpInside" id="ivp-4k-fui"/>
-                                                    <segue destination="yDs-HQ-ExB" kind="presentation" modalPresentationStyle="fullScreen" id="tBA-Jq-XL4"/>
+                                                    <segue destination="yDs-HQ-ExB" kind="show" id="tBA-Jq-XL4"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8cR-Zw-yCp" customClass="BorderButton" customModule="GuessNumber" customModuleProvider="target">
@@ -166,7 +168,7 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="34" translatesAutoresizingMaskIntoConstraints="NO" id="6gZ-9b-eKu">
-                                <rect key="frame" x="20" y="124" width="374" height="114"/>
+                                <rect key="frame" x="20" y="168" width="374" height="114"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="103-R4-HEf">
                                         <rect key="frame" x="0.0" y="0.0" width="374" height="56"/>
@@ -209,6 +211,7 @@
                             <constraint firstItem="6gZ-9b-eKu" firstAttribute="leading" secondItem="INP-KY-IAj" secondAttribute="leading" constant="20" id="xfg-Nd-w6t"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="sGn-8L-kwx"/>
                     <connections>
                         <outlet property="guessingNumberLabel" destination="vl7-CQ-ER9" id="b4G-en-HuH"/>
                         <outlet property="triesCountLabel" destination="mQM-je-XJi" id="idl-3b-0S2"/>
@@ -216,7 +219,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DlF-E7-6XJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1657.9710144927537" y="93.75"/>
+            <point key="canvasLocation" x="2529" y="94"/>
         </scene>
         <!--Game Result View Controller-->
         <scene sceneID="iRh-w3-DPa">
@@ -227,7 +230,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" axis="vertical" spacing="151" translatesAutoresizingMaskIntoConstraints="NO" id="GiS-RQ-ZGC">
-                                <rect key="frame" x="20" y="109" width="374" height="248"/>
+                                <rect key="frame" x="20" y="153" width="374" height="248"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Scores:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SaS-VE-80Q">
                                         <rect key="frame" x="0.0" y="0.0" width="374" height="24"/>
@@ -273,7 +276,7 @@
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="Main menu"/>
                                         <connections>
-                                            <segue destination="BYZ-38-t0r" kind="presentation" modalPresentationStyle="fullScreen" id="5so-6f-SU5"/>
+                                            <segue destination="6e7-hd-XcE" kind="unwind" unwindAction="unwindSegue:" id="tlH-c5-Zt8"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -292,6 +295,7 @@
                             <constraint firstItem="GiS-RQ-ZGC" firstAttribute="top" secondItem="V3m-av-GcD" secondAttribute="top" constant="65" id="o4o-EK-Hk7"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="CTS-1L-UM3"/>
                     <connections>
                         <outlet property="computerTriesCountLabel" destination="a4E-b4-8Zz" id="qen-0Q-QJc"/>
                         <outlet property="gameResultLabel" destination="5mD-xJ-o45" id="UgZ-Bg-TPc"/>
@@ -299,8 +303,9 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VjZ-Vz-WP9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="6e7-hd-XcE" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="1255.072463768116" y="980.35714285714278"/>
+            <point key="canvasLocation" x="4155.072463768116" y="93.75"/>
         </scene>
         <!--Player Guessing View Controller-->
         <scene sceneID="UZI-Rp-wkJ">
@@ -311,7 +316,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="60" translatesAutoresizingMaskIntoConstraints="NO" id="JhF-jp-DDq">
-                                <rect key="frame" x="20" y="164" width="374" height="356"/>
+                                <rect key="frame" x="20" y="208" width="374" height="356"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Gp6-rh-mry">
                                         <rect key="frame" x="0.0" y="0.0" width="374" height="68"/>
@@ -368,16 +373,35 @@
                             <constraint firstItem="yLt-5m-I1g" firstAttribute="trailing" secondItem="JhF-jp-DDq" secondAttribute="trailing" constant="20" id="j7U-bG-h0t"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="soi-3P-P3P"/>
                     <connections>
                         <outlet property="playerGuessingTextField" destination="joZ-Kh-yyW" id="fvw-ie-Dev"/>
                         <outlet property="statusLabel" destination="Oqo-pL-xlS" id="vne-EV-tM7"/>
                         <outlet property="triesCountLabel" destination="TLr-Ek-hst" id="IV5-su-Fns"/>
-                        <segue destination="AkD-Lo-BeX" kind="presentation" identifier="toResultScreen" modalPresentationStyle="fullScreen" id="xo5-th-AaB"/>
+                        <segue destination="AkD-Lo-BeX" kind="show" identifier="toResultScreen" id="xo5-th-AaB"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="M3r-R4-PAl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2466.666666666667" y="93.75"/>
+            <point key="canvasLocation" x="3326" y="94"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="nb0-M3-yWU">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Dyp-IN-dTQ" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="8j4-EK-376">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="nPq-gW-Gbv"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TDQ-J5-C89" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="128.98550724637681" y="93.75"/>
         </scene>
     </scenes>
     <designables>

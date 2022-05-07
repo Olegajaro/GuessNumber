@@ -25,6 +25,7 @@ class ComputerGuessingViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        hideBackBarButton()
         guessingNumberLabel.text = "Your number is - \(game.computerFirstGuess())?"
     }
     

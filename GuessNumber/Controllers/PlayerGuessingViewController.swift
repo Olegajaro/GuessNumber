@@ -27,9 +27,10 @@ class PlayerGuessingViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        hideBackBarButton()
         setup()
     }
-    
+
     // MARK: - IBActions
     @IBAction func guessButtonTapped() {
         updateUI()

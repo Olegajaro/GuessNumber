@@ -18,6 +18,7 @@ class GameResultViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        hideBackBarButton()
         setup()
     }
     

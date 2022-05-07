@@ -28,5 +28,9 @@ extension UIViewController {
     @objc private func viewTapped(_ recognizer: UITapGestureRecognizer) {
         view.endEditing(true)
     }
+    
+    func hideBackBarButton() {
+        navigationItem.hidesBackButton = true
+    }
 }
 
