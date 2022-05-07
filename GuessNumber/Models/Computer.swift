@@ -9,43 +9,47 @@ import Foundation
 
 final class Computer {
     
-    private(set) var computerVariant = 0
+    private(set) var computerVariant = 0 {
+        didSet {
+            variants.append(computerVariant)
+        }
+    }
     
-    private var computerInitallyValue = 0
+    private var computerInitiallyValue = 0
     private var left = 1
     private var right = 100
     
+    private var variants: [Int] = []
+    
     func initiallyGuessingNumber() -> Int {
-        computerInitallyValue = Int.random(in: left...right)
+        computerInitiallyValue = Int.random(in: left...right)
         
         if computerVariant == 0 {
-            computerVariant = computerInitallyValue
+            computerVariant = computerInitiallyValue
         }
         
-        return computerInitallyValue
+        return computerVariant
     }
     
     func computerGuessingNumber(numberToGuess: Int) -> Int {
         
         if numberToGuess > computerVariant {
             if right <= computerVariant {
-                right = computerInitallyValue
-                computerInitallyValue = computerVariant
+                computerInitiallyValue = getPenultimateValueFrom(array: variants)
+                right = computerInitiallyValue - 1
             }
             
-            left = computerVariant
-            let listNumber = Array((computerVariant + 1)...right)
-            computerVariant = search(listNumber) ?? 0
+            left = computerVariant + 1
+            computerVariant = search(Array(left...right)) ?? 0
             left = computerVariant
         } else if numberToGuess < computerVariant {
             if left >= computerVariant {
-                left = computerInitallyValue
-                computerInitallyValue = computerVariant
+                computerInitiallyValue = getPenultimateValueFrom(array: variants)
+                left = computerInitiallyValue + 1
             }
             
-            right = computerVariant
-            let listNumber = Array(left...(computerVariant - 1))
-            computerVariant = search(listNumber) ?? 0
+            right = computerVariant - 1
+            computerVariant = search(Array(left...right)) ?? 0
             right = computerVariant
         }
         
@@ -53,9 +57,7 @@ final class Computer {
     }
     
     func guessTheNumber() -> Int {
-        let setNumber = Int.random(in: 1...100)
-        
-        return setNumber
+        return Int.random(in: 1...100)
     }
     
     private func search(_ array: [Int]) -> Int? {
@@ -77,4 +79,10 @@ final class Computer {
         return nil
     }
     
+    private func getPenultimateValueFrom(array: [Int]) -> Int {
+        let lastIndex = array.index(before: array.endIndex)
+        let index = array.index(before: lastIndex)
+        
+        return array[index]
+    }
 }

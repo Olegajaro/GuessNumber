@@ -23,6 +23,8 @@ class GuessNumberViewController: UIViewController {
     // MARK: - View lifecycle methods
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        hideBackBarButton()
         setupDismissKeyboardGesture()
     }
     
